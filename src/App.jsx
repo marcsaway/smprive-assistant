@@ -269,10 +269,10 @@ export default function App() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background: #0f0e0c; }
+        body { background: #0c0e14; }
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #4a3f2f; border-radius: 2px; }
+        ::-webkit-scrollbar-thumb { background: #3a4a6b; border-radius: 2px; }
         textarea { resize: none; }
         @keyframes dotBounce { 0%,80%,100%{transform:translateY(0);opacity:0.4} 40%{transform:translateY(-5px);opacity:1} }
       `}</style>
@@ -281,43 +281,43 @@ export default function App() {
 }
 
 const styles = {
-  root: { fontFamily: "'DM Sans', sans-serif", minHeight: "100vh", background: "#0f0e0c", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px", position: "relative" },
-  bgPattern: { position: "fixed", inset: 0, backgroundImage: `radial-gradient(ellipse at 20% 50%, rgba(139,101,57,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(101,80,45,0.06) 0%, transparent 50%)`, pointerEvents: "none" },
-  shell: { width: "100%", maxWidth: "720px", background: "#1a1712", border: "1px solid #2e2820", borderRadius: "16px", overflow: "hidden", display: "flex", flexDirection: "column", minHeight: "85vh", maxHeight: "90vh", boxShadow: "0 32px 80px rgba(0,0,0,0.6)", position: "relative", zIndex: 1 },
-  header: { display: "flex", alignItems: "center", justifyContent: "space-between", padding: "18px 24px", borderBottom: "1px solid #2e2820", background: "#161410", flexWrap: "wrap", gap: "12px" },
+  root: { fontFamily: "'DM Sans', sans-serif", minHeight: "100vh", background: "#0c0e14", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px", position: "relative" },
+  bgPattern: { position: "fixed", inset: 0, backgroundImage: `radial-gradient(ellipse at 20% 50%, rgba(57,114,181,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(45,80,140,0.06) 0%, transparent 50%)`, pointerEvents: "none" },
+  shell: { width: "100%", maxWidth: "720px", background: "#121620", border: "1px solid #1e2a3e", borderRadius: "16px", overflow: "hidden", display: "flex", flexDirection: "column", minHeight: "85vh", maxHeight: "90vh", boxShadow: "0 32px 80px rgba(0,0,0,0.6)", position: "relative", zIndex: 1 },
+  header: { display: "flex", alignItems: "center", justifyContent: "space-between", padding: "18px 24px", borderBottom: "1px solid #1e2a3e", background: "#0f1318", flexWrap: "wrap", gap: "12px" },
   logoArea: { display: "flex", alignItems: "center", gap: "12px" },
-  logoMark: { width: "40px", height: "40px", borderRadius: "10px", background: "linear-gradient(135deg, #8b6539, #6b4e2a)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Cormorant Garamond', serif", fontSize: "12px", fontWeight: "600", color: "#f0e6d3", letterSpacing: "1px" },
-  logoName: { fontFamily: "'Cormorant Garamond', serif", fontSize: "18px", fontWeight: "600", color: "#e8dcc8" },
-  logoSub: { fontSize: "11px", color: "#6b5e4a", marginTop: "1px" },
+  logoMark: { width: "40px", height: "40px", borderRadius: "10px", background: "linear-gradient(135deg, #3972b5, #2a5a9e)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Cormorant Garamond', serif", fontSize: "12px", fontWeight: "600", color: "#e0eef8", letterSpacing: "1px" },
+  logoName: { fontFamily: "'Cormorant Garamond', serif", fontSize: "18px", fontWeight: "600", color: "#d0e0f5" },
+  logoSub: { fontSize: "11px", color: "#5a6a8a", marginTop: "1px" },
   tabs: { display: "flex", gap: "6px" },
-  tab: { padding: "7px 14px", borderRadius: "8px", border: "1px solid #2e2820", background: "transparent", color: "#6b5e4a", fontSize: "12px", cursor: "pointer", fontFamily: "'DM Sans', sans-serif" },
-  tabActive: { background: "#2e2820", color: "#c9a96e", borderColor: "#4a3f2f" },
+  tab: { padding: "7px 14px", borderRadius: "8px", border: "1px solid #1e2a3e", background: "transparent", color: "#5a6a8a", fontSize: "12px", cursor: "pointer", fontFamily: "'DM Sans', sans-serif" },
+  tabActive: { background: "#1e2a3e", color: "#6ea8e6", borderColor: "#3a4a6b" },
   chatContainer: { display: "flex", flexDirection: "column", flex: 1, overflow: "hidden" },
   messageList: { flex: 1, overflowY: "auto", padding: "24px 20px", display: "flex", flexDirection: "column", gap: "16px" },
   msgRow: { display: "flex", alignItems: "flex-end", gap: "10px" },
-  avatar: { width: "32px", height: "32px", borderRadius: "8px", background: "linear-gradient(135deg, #5a4530, #3d2f1e)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "10px", fontWeight: "500", color: "#c9a96e", flexShrink: 0, border: "1px solid #2e2820" },
+  avatar: { width: "32px", height: "32px", borderRadius: "8px", background: "linear-gradient(135deg, #2a3d5a, #1e2d45)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "10px", fontWeight: "500", color: "#6ea8e6", flexShrink: 0, border: "1px solid #1e2a3e" },
   bubble: { maxWidth: "72%", padding: "12px 16px", borderRadius: "12px", fontSize: "14px", lineHeight: "1.6", wordBreak: "break-word" },
-  bubbleBot: { background: "#221e18", color: "#d4c4a8", border: "1px solid #2e2820", borderBottomLeftRadius: "4px" },
-  bubbleUser: { background: "linear-gradient(135deg, #6b4e2a, #4a3520)", color: "#f0e6d3", border: "1px solid #8b6539", borderBottomRightRadius: "4px" },
-  dots: { display: "inline-flex", gap: "2px", fontSize: "16px", color: "#c9a96e" },
-  inputBar: { display: "flex", gap: "10px", padding: "16px 20px 8px", borderTop: "1px solid #2e2820", alignItems: "flex-end" },
-  input: { flex: 1, background: "#221e18", border: "1px solid #2e2820", borderRadius: "10px", padding: "12px 14px", color: "#e8dcc8", fontSize: "14px", fontFamily: "'DM Sans', sans-serif", outline: "none", lineHeight: "1.5", maxHeight: "120px", overflowY: "auto" },
-  sendBtn: { width: "44px", height: "44px", borderRadius: "10px", background: "linear-gradient(135deg, #8b6539, #6b4e2a)", border: "none", color: "#f0e6d3", fontSize: "16px", cursor: "pointer", flexShrink: 0 },
+  bubbleBot: { background: "#161c28", color: "#c0d4f0", border: "1px solid #1e2a3e", borderBottomLeftRadius: "4px" },
+  bubbleUser: { background: "linear-gradient(135deg, #2a5a9e, #1e3a6b)", color: "#e0eef8", border: "1px solid #3972b5", borderBottomRightRadius: "4px" },
+  dots: { display: "inline-flex", gap: "2px", fontSize: "16px", color: "#6ea8e6" },
+  inputBar: { display: "flex", gap: "10px", padding: "16px 20px 8px", borderTop: "1px solid #1e2a3e", alignItems: "flex-end" },
+  input: { flex: 1, background: "#161c28", border: "1px solid #1e2a3e", borderRadius: "10px", padding: "12px 14px", color: "#d0e0f5", fontSize: "14px", fontFamily: "'DM Sans', sans-serif", outline: "none", lineHeight: "1.5", maxHeight: "120px", overflowY: "auto" },
+  sendBtn: { width: "44px", height: "44px", borderRadius: "10px", background: "linear-gradient(135deg, #3972b5, #2a5a9e)", border: "none", color: "#e0eef8", fontSize: "16px", cursor: "pointer", flexShrink: 0 },
   clearRow: { padding: "8px 20px 16px", display: "flex", justifyContent: "center" },
-  clearBtn: { background: "none", border: "none", color: "#4a3f2f", fontSize: "12px", cursor: "pointer", fontFamily: "'DM Sans', sans-serif" },
+  clearBtn: { background: "none", border: "none", color: "#3a4a6b", fontSize: "12px", cursor: "pointer", fontFamily: "'DM Sans', sans-serif" },
   adminContainer: { flex: 1, display: "flex", flexDirection: "column", padding: "20px", gap: "12px", overflow: "hidden" },
   adminHeader: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "12px", flexWrap: "wrap" },
-  adminTitle: { fontFamily: "'Cormorant Garamond', serif", fontSize: "20px", color: "#e8dcc8", fontWeight: "600" },
-  adminSub: { fontSize: "12px", color: "#6b5e4a", marginTop: "4px", lineHeight: "1.5" },
+  adminTitle: { fontFamily: "'Cormorant Garamond', serif", fontSize: "20px", color: "#d0e0f5", fontWeight: "600" },
+  adminSub: { fontSize: "12px", color: "#5a6a8a", marginTop: "4px", lineHeight: "1.5" },
   saveBtnArea: { display: "flex", alignItems: "center", gap: "10px", flexShrink: 0 },
-  saveStatus: { fontSize: "12px", color: "#8b6539", fontWeight: "500" },
-  saveBtn: { padding: "9px 18px", borderRadius: "8px", background: "linear-gradient(135deg, #8b6539, #6b4e2a)", border: "none", color: "#f0e6d3", fontSize: "13px", cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontWeight: "500" },
-  uploadZone: { border: "2px dashed #2e2820", borderRadius: "10px", padding: "18px 20px", display: "flex", alignItems: "center", gap: "14px", cursor: "pointer", transition: "all 0.2s", background: "#161410" },
-  uploadZoneDragging: { borderColor: "#8b6539", background: "#1e1a14" },
+  saveStatus: { fontSize: "12px", color: "#3972b5", fontWeight: "500" },
+  saveBtn: { padding: "9px 18px", borderRadius: "8px", background: "linear-gradient(135deg, #3972b5, #2a5a9e)", border: "none", color: "#e0eef8", fontSize: "13px", cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontWeight: "500" },
+  uploadZone: { border: "2px dashed #1e2a3e", borderRadius: "10px", padding: "18px 20px", display: "flex", alignItems: "center", gap: "14px", cursor: "pointer", transition: "all 0.2s", background: "#0f1318" },
+  uploadZoneDragging: { borderColor: "#3972b5", background: "#141a24" },
   uploadIcon: { fontSize: "22px", flexShrink: 0 },
-  uploadText: { fontSize: "13px", color: "#6b5e4a", lineHeight: "1.6" },
-  uploadSub: { fontSize: "11px", color: "#4a3f2f" },
-  uploadStatus: { fontSize: "13px", color: "#c9a96e", padding: "8px 12px", background: "#1e1a14", borderRadius: "8px", border: "1px solid #2e2820" },
-  kbEditor: { flex: 1, background: "#0f0e0c", border: "1px solid #2e2820", borderRadius: "10px", padding: "16px", color: "#c4b49a", fontSize: "13px", fontFamily: "monospace", lineHeight: "1.7", outline: "none", overflowY: "auto", minHeight: "150px" },
-  adminHint: { fontSize: "12px", color: "#4a3f2f", padding: "10px 14px", background: "#161410", borderRadius: "8px", border: "1px solid #2a2318", lineHeight: "1.5" },
+  uploadText: { fontSize: "13px", color: "#5a6a8a", lineHeight: "1.6" },
+  uploadSub: { fontSize: "11px", color: "#3a4a6b" },
+  uploadStatus: { fontSize: "13px", color: "#6ea8e6", padding: "8px 12px", background: "#141a24", borderRadius: "8px", border: "1px solid #1e2a3e" },
+  kbEditor: { flex: 1, background: "#0c0e14", border: "1px solid #1e2a3e", borderRadius: "10px", padding: "16px", color: "#a0bcd8", fontSize: "13px", fontFamily: "monospace", lineHeight: "1.7", outline: "none", overflowY: "auto", minHeight: "150px" },
+  adminHint: { fontSize: "12px", color: "#3a4a6b", padding: "10px 14px", background: "#0f1318", borderRadius: "8px", border: "1px solid #1a2438", lineHeight: "1.5" },
 };
